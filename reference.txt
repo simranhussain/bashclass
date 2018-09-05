@@ -1,0 +1,57 @@
+Delete remove the Data only, the Table structure remains intact
+Rollback possible
+After performing a DELETE operation you need to COMMIT or ROLLBACK the transaction to make the change permanent or to undo it
+This is a DML Statement
+
+Drop permanently removes both the Data as well as the Table Structure
+This is a DDL Statement
+Rollback not possible
+
+
+
+
+TRUNCATE is a DDL command
+TRUNCATE is executed using a table lock and whole table is locked for remove all records.
+We cannot use Where clause with TRUNCATE.
+TRUNCATE removes all rows from a table.
+Minimal logging in transaction log, so it is performance wise faster.
+
+
+
+DELETE is a DML command.
+DELETE is executed using a row lock, each row in the table is locked for deletion.
+We can use where clause with DELETE to filter & delete specific records.
+The DELETE command is used to remove rows from a table based on WHERE condition.
+It maintain the log, so it slower than TRUNCATE.
+
+
+
+INNER JOIN: Returns all rows when there is at least one match in BOTH tables
+LEFT JOIN: Return all rows from the left table, and the matched rows from the right table
+RIGHT JOIN: Return all rows from the right table, and the matched rows from the left table
+FULL JOIN: Return all rows when there is a match in ONE of the tables
+
+DDL Statements are
+
+CREATE        :Use to create objects like CREATE TABLE, CREATE FUNCTION, 
+                        CREATE SYNONYM, CREATE VIEW. Etc.
+
+ALTER           :Use to Alter Objects like ALTER TABLE, ALTER USER, ALTER 
+                         TABLESPACE, ALTER DATABASE. Etc.
+
+DROP             :Use to Drop Objects like DROP TABLE, DROP USER, DROP 
+                        TABLESPACE, DROP FUNCTION. Etc.
+
+REPLACE      :Use to Rename table names.
+
+TRUNCATE   :Use to truncate (delete all rows) a table.
+
+
+
+
+
+
+SELECT 
+INSERT 
+UPDATE 
+DELETE
